@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="bg-light w-full min-h-screen">
       <NavBar />
+      <div>Home</div>
     </main>
   );
 }
