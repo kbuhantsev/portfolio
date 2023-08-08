@@ -36,10 +36,20 @@ const NavBar = () => {
         <CustomLink href="/articles" title="Articles" />
       </nav>
       <nav className="flex items-center gap-3">
-        <SocialLink href="/" target={"_blanc"} whileHover={{ y: -3 }}>
+        <SocialLink
+          href="/"
+          target={"_blanc"}
+          whileHover={{ y: -3 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <GitHub width="2em" height="3em" />
         </SocialLink>
-        <SocialLink href="/" target={"_blanc"} whileHover={{ y: -3 }}>
+        <SocialLink
+          href="/"
+          target={"_blanc"}
+          whileHover={{ y: -3 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <LinkedIn width="2em" height="3em" />
         </SocialLink>
       </nav>

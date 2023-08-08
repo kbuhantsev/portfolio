@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 const ProjectsPage = () => {
   return (
     <>
-      <NavBar />
       <div>ProjectsPage</div>
     </>
   );

@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 const ArticlesPage = () => {
   return (
     <>
-      <NavBar />
       <div>ArticlesPage</div>
     </>
   );
