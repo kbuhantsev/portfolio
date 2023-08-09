@@ -37,7 +37,7 @@ const NavBar = () => {
       </nav>
       <nav className="flex items-center gap-3">
         <SocialLink
-          href="/"
+          href="https://github.com/kbuhantsev"
           target={"_blanc"}
           whileHover={{ y: -3 }}
           whileTap={{ scale: 0.9 }}
@@ -45,7 +45,7 @@ const NavBar = () => {
           <GitHub width="2em" height="3em" />
         </SocialLink>
         <SocialLink
-          href="/"
+          href="https://www.linkedin.com/in/kbuhantsev"
           target={"_blanc"}
           whileHover={{ y: -3 }}
           whileTap={{ scale: 0.9 }}
