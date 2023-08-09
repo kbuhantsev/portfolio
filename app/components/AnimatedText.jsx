@@ -4,13 +4,24 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const quote = {
+  animate: {
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const singleWord = {
   initial: {
     opacity: 0,
+    y: 50,
   },
   animate: {
     opacity: 1,
+    y: 0,
     transition: {
-      delay: 0.5,
+      duration: 1,
     },
   },
 };
@@ -25,9 +36,13 @@ const AnimatedText = ({ text, className = "" }) => {
         animate="animate"
       >
         {text.split(" ").map((word, index) => (
-          <span key={index} className="inline-block">
+          <motion.span
+            key={index}
+            className="inline-block"
+            variants={singleWord}
+          >
             {word}&nbsp;
-          </span>
+          </motion.span>
         ))}
       </motion.h1>
     </div>
