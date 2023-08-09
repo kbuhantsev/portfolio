@@ -1,5 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+
+export const metadata = {
+  title: "Projects",
+};
 
 const ProjectsPage = () => {
   return (
