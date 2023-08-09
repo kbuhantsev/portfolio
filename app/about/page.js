@@ -1,11 +1,17 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import AnimatedText from "../components/AnimatedText";
+
+export const metadata = {
+  title: "Kostiantyn | About page",
+  description: "Full stack developer Kostiantyn Bukhantsev",
+};
 
 const AboutPage = () => {
   return (
-    <>
-      <div>AboutPage</div>
-    </>
+    <main className="flex w-full flex-col items-center justify-center">
+      <AnimatedText text="Passion Fuels Purpose!" />
+      <div></div>
+    </main>
   );
 };
 
