@@ -1,11 +1,39 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useEffect } from "react";
 import AnimatedText from "../components/AnimatedText";
 import profileImage from "../../public/images/profile/developer-pic-2.jpg";
 import Image from "next/image";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "../components/Skills";
 
 export const metadata = {
   title: "Kostiantyn | About page",
   description: "Full stack developer Kostiantyn Bukhantsev",
+};
+
+const AnimatedNumbers = ({ value }) => {
+  const ref = useRef(null);
+
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue]);
+
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [springValue, value]);
+
+  return <span ref={ref} />;
 };
 
 const AboutPage = () => {
@@ -36,15 +64,41 @@ const AboutPage = () => {
             the opportunity to bring my skills and passion to your next project.
           </p>
         </div>
-        <div className="col-span-3 h-max rounded-2xl border-solid border-2 border-dark bg-light p-8 relative">
-          <div className="top-0 -right-3 w-[102%] h-[102%] rounded-[2rem] bg-dark absolute opacity-[0.5]" />
+        <div className="col-span-3 h-max rounded-2xl border-solid border-2 border-dark bg-light p-8 shadow-2xl">
           <Image
             src={profileImage}
             alt="profile image"
             className="w-full h-auto rounded-2xl"
           />
         </div>
+        <div className="col-span-2 flex flex-col items-end justify-between">
+          <div className="flex flex-col items-end justify-center">
+            <span className="inline-block text-7xl font-bold">
+              <AnimatedNumbers value={50} />+
+            </span>
+            <h1 className="text-xl font-medium capitalize text-dark/75">
+              satisfied clients
+            </h1>
+          </div>
+          <div className="flex flex-col items-end justify-center">
+            <span className="inline-block text-7xl font-bold">
+              <AnimatedNumbers value={40} />+
+            </span>
+            <h1 className="text-xl font-medium capitalize text-dark/75">
+              projects completed
+            </h1>
+          </div>
+          <div className="flex flex-col items-end justify-center">
+            <span className="inline-block text-7xl font-bold">
+              <AnimatedNumbers value={4} />+
+            </span>
+            <h1 className="text-xl font-medium capitalize text-dark/75">
+              years of experience
+            </h1>
+          </div>
+        </div>
       </div>
+      <Skills />
     </main>
   );
 };
