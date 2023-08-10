@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -19,7 +21,9 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-24 w-full text-center">Skills</h2>
+      <h2 className="font-bold text-8xl mt-24 w-full text-center mb-16">
+        Skills
+      </h2>
       <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
         <Skill name="WEB" x="0" y="0" />
         <Skill name="CSS" x="-10vw" y="-10vw" />
