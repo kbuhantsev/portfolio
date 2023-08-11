@@ -29,7 +29,7 @@ const AboutPage = () => {
           </p>
           <p className="font-medium my-4">
             I believe that design is about more than just making things look
-            pretty – it&apos;s about solving problems and creating intuitive,
+            pretty - it&apos;s about solving problems and creating intuitive,
             enjoyable experiences for users.
           </p>
           <p className="font-medium my-4">

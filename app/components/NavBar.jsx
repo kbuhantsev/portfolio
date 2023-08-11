@@ -1,30 +1,8 @@
-"use client";
-
-import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
-import { usePathname } from "next/navigation";
 import { GitHub, LinkedIn } from "./Icons";
-import { animate, motion } from "framer-motion";
-
-const CustomLink = ({ href, title, className = "" }) => {
-  const pathname = usePathname();
-
-  return (
-    <Link href={href} className={`${className} relative group`}>
-      {title}
-      <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-1
-        group-hover:w-full transition-[width] ease duration-300
-        ${pathname === href ? "w-full" : "w-0"}`}
-      >
-        &nbsp;
-      </span>
-    </Link>
-  );
-};
-
-const SocialLink = motion(Link);
+import SocialLink from "./SocialLink";
+import CustomLink from "./CustomLink";
 
 const NavBar = () => {
   return (
@@ -36,20 +14,10 @@ const NavBar = () => {
         <CustomLink href="/articles" title="Articles" />
       </nav>
       <nav className="flex items-center gap-3">
-        <SocialLink
-          href="https://github.com/kbuhantsev"
-          target={"_blanc"}
-          whileHover={{ y: -3 }}
-          whileTap={{ scale: 0.9 }}
-        >
+        <SocialLink href="https://github.com/kbuhantsev">
           <GitHub width="2em" height="3em" />
         </SocialLink>
-        <SocialLink
-          href="https://www.linkedin.com/in/kbuhantsev"
-          target={"_blanc"}
-          whileHover={{ y: -3 }}
-          whileTap={{ scale: 0.9 }}
-        >
+        <SocialLink href="https://www.linkedin.com/in/kbuhantsev">
           <LinkedIn width="2em" height="3em" />
         </SocialLink>
       </nav>
