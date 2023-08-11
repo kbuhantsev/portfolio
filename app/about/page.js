@@ -5,6 +5,7 @@ import Image from "next/image";
 import Skills from "../components/Skills";
 import Expirience from "../components/Expirience";
 import AnimatedNumbers from "../components/AnimatedNumbers";
+import Education from "../components/Education";
 
 export const metadata = {
   title: "Kostiantyn | About page",
@@ -75,6 +76,7 @@ const AboutPage = () => {
       </div>
       <Skills />
       <Expirience />
+      <Education />
     </main>
   );
 };
