@@ -6,7 +6,7 @@ import { LinkArrow } from "./components/Icons";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-between w-full">
+    <section className="flex items-center justify-between w-full">
       <div className="w-1/2">
         <Image src={profilePic} alt="" width={500} height={500} />
       </div>
@@ -41,6 +41,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
