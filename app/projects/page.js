@@ -36,7 +36,7 @@ export const FeaturedProject = ({
         <Link href={github} target="_blanc">
           <GitHub />
         </Link>
-        <Link href={github} target="_blanc">
+        <Link href={link} target="_blanc">
           Visit Project
         </Link>
       </div>
