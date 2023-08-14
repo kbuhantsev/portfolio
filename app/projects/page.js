@@ -1,60 +1,79 @@
 import React from "react";
 import AnimatedText from "../components/AnimatedText";
-import Link from "next/link";
-import Image from "next/image";
-import { GitHub } from "../components/Icons";
+import FeaturedProject from "../components/FeaturedProject";
+import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import Project from "../components/Progect";
 
 export const metadata = {
   title: "Kostiantyn | Projects page",
   description: "Full stack developer Kostiantyn Bukhantsev",
 };
 
-export const FeaturedProject = ({
-  type,
-  title,
-  summary,
-  img,
-  link,
-  github,
-}) => {
-  return (
-    <article>
-      <Link href={link} target="_blanc">
-        <Image src={img} alt={title} className="w-full h-auto" />
-      </Link>
-
-      <div>
-        <span>{type}</span>
-        <Link href={link} target="_blanc">
-          <h2>{title}</h2>
-        </Link>
-      </div>
-
-      <p>{summary}</p>
-
-      <div>
-        <Link href={github} target="_blanc">
-          <GitHub />
-        </Link>
-        <Link href={link} target="_blanc">
-          Visit Project
-        </Link>
-      </div>
-    </article>
-  );
-};
-
 const ProjectsPage = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center">
-      <AnimatedText text="Imagination Trumps Knowledge!" />
+      <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16" />
       <div className="grid grid-cols-12 gap-24">
-        <div className="col-span-12">Featured project</div>
-        <div className="col-span-6">Project 1</div>
-        <div className="col-span-6">Project 2</div>
-        <div className="col-span-12">Featured project</div>
-        <div className="col-span-6">Project 3</div>
-        <div className="col-span-6">Project 4</div>
+        <div className="col-span-12">
+          <FeaturedProject
+            type="Featured Project "
+            title="Crypto Screener Application"
+            summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+local currency."
+            img={project1}
+            link="/"
+            github="/"
+          />
+        </div>
+        <div className="col-span-6">
+          <Project
+            type="Project "
+            title="Crypto Screener Application"
+            img={project1}
+            link="/"
+            github="/"
+          />
+        </div>
+        <div className="col-span-6">
+          <Project
+            type="Project "
+            title="Crypto Screener Application"
+            img={project1}
+            link="/"
+            github="/"
+          />
+        </div>
+        <div className="col-span-12">
+          <FeaturedProject
+            type="Featured Project "
+            title="Crypto Screener Application"
+            summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+local currency."
+            img={project1}
+            link="/"
+            github="/"
+          />
+        </div>
+        <div className="col-span-6">
+          <Project
+            type="Project "
+            title="Crypto Screener Application"
+            img={project1}
+            link="/"
+            github="/"
+          />
+        </div>
+        <div className="col-span-6">
+          <Project
+            type="Project "
+            title="Crypto Screener Application"
+            img={project1}
+            link="/"
+            github="/"
+          />
+        </div>
       </div>
     </section>
   );
