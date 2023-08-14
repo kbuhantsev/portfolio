@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import { GitHub, LinkedIn } from "./Icons";
 import SocialLink from "./SocialLink";
 import CustomLink from "./CustomLink";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const NavBar = () => {
   return (
@@ -20,6 +21,7 @@ const NavBar = () => {
         <SocialLink href="https://www.linkedin.com/in/kbuhantsev">
           <LinkedIn width="2em" height="3em" />
         </SocialLink>
+        <ThemeSwitcher />
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />

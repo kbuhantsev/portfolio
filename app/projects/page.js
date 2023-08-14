@@ -13,7 +13,7 @@ const ProjectsPage = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center">
       <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16" />
-      <div className="grid grid-cols-12 gap-24">
+      <div className="grid grid-cols-12 gap-24 gap-y-32">
         <div className="col-span-12">
           <FeaturedProject
             type="Featured Project "
