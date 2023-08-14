@@ -8,7 +8,10 @@ const ThemeSwitcher = () => {
   const { mode, setMode } = useThemeSwitcher();
 
   return (
-    <buton onClick={() => setMode(mode === "dark" ? "light" : "dark")}>
+    <buton
+      onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+      className="ml-3 flex items-center justify-center rounded-full p-1"
+    >
       {mode === "dark" ? (
         <SunIcon className={"fill-dark"} />
       ) : (

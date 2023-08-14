@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head></Head>
       <body className={montserrat.className}>
-        <main className="bg-light text-dark w-full min-h-screen">
+        <main className="bg-light text-dark w-full min-h-screen dark:bg-dark dark:text-light">
           <NavBar />
           <Layout>{children}</Layout>
           <Footer />

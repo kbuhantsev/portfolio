@@ -13,7 +13,7 @@ export default function Home() {
       <div className="w-1/2 flex flex-col items-center self-center">
         <AnimatedText
           text="Turning Vision Into Reality With Code And Design."
-          className="!text-5xl text-left"
+          className="!text-5xl text-left "
         />
         <p className="my-4 text-base font-medium">
           As a skilled full-stack developer, I am dedicated to turning ideas
@@ -26,7 +26,9 @@ export default function Home() {
             target={"_blanc"}
             className="flex items-center bg-dark text-light p-2.5 px-6
              rounded-lg text-lg font-semibold border-2 border-solid border-transparent 
-             hover:bg-light hover:text-dark hover:border-dark"
+             hover:bg-light hover:text-dark hover:border-dark
+             dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
+             hover:dark:border-light"
             download={true}
           >
             Resume

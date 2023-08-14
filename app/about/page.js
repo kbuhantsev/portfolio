@@ -18,7 +18,7 @@ const AboutPage = () => {
       <AnimatedText text="Passion Fuels Purpose!" className="mb-4" />
       <div className="grid w-full grid-cols-8 gap-16">
         <div className="col-span-3 flex flex-col items-start justify-start">
-          <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+          <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
             Biography
           </h2>
           <p className="font-medium ">
@@ -52,7 +52,7 @@ const AboutPage = () => {
             <span className="inline-block text-7xl font-bold">
               <AnimatedNumbers value={50} />+
             </span>
-            <h1 className="text-xl font-medium capitalize text-dark/75">
+            <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
               satisfied clients
             </h1>
           </div>
@@ -60,7 +60,7 @@ const AboutPage = () => {
             <span className="inline-block text-7xl font-bold">
               <AnimatedNumbers value={40} />+
             </span>
-            <h1 className="text-xl font-medium capitalize text-dark/75">
+            <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
               projects completed
             </h1>
           </div>
@@ -68,7 +68,7 @@ const AboutPage = () => {
             <span className="inline-block text-7xl font-bold">
               <AnimatedNumbers value={4} />+
             </span>
-            <h1 className="text-xl font-medium capitalize text-dark/75">
+            <h1 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
               years of experience
             </h1>
           </div>
