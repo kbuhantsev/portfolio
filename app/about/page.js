@@ -14,7 +14,7 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <section className="flex w-full flex-col items-center justify-center">
+    <section className="flex w-full flex-col items-center justify-center mb-[250px]">
       <AnimatedText text="Passion Fuels Purpose!" className="mb-4" />
       <div className="grid w-full grid-cols-8 gap-16">
         <div className="col-span-3 flex flex-col items-start justify-start">
