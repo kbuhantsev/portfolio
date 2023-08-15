@@ -65,22 +65,15 @@ const NavBar = () => {
        bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 "
         >
           <nav className="flex items-center flex-col justify-center gap-3 mb-3">
-            <CustomMobileLink
-              href="/"
-              title="Home"
-              className="mr-4"
-              toggle={handleClick}
-            />
+            <CustomMobileLink href="/" title="Home" toggle={handleClick} />
             <CustomMobileLink
               href="/about"
               title="About"
-              className="mr-4"
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
               title="Projects"
-              className="mr-4"
               toggle={handleClick}
             />
             <CustomMobileLink
