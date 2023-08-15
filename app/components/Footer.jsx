@@ -10,7 +10,9 @@ const Footer = () => {
       <div className="py-5 flex items-center justify-between">
         <span>{new Date().getFullYear()} &copy; All rights Reserved</span>
         <div>Build with &#x1f495; in NextJS</div>
-        <Link href="/">Say hello</Link>
+        <Link href="mailto:k.buhantsev@gmail.com" target="_blanc">
+          Say hello
+        </Link>
       </div>
     </footer>
   );
