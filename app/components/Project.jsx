@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GitHub } from "../components/Icons";
+import { GitHub } from "./Icons";
 
 const Project = ({ type, title, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center 
-    rounded-2xl border border-solid border-dark bg-light p-6 relative shadow-2xl mb-16"
+    rounded-2xl border border-solid border-dark bg-light p-6 relative
+    shadow-2xl mb-16 dark:border-light dark:bg-dark"
     >
       <Link
         href={link}
@@ -18,7 +19,9 @@ const Project = ({ type, title, img, link, github }) => {
       </Link>
 
       <div className="w-fill flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blanc"

@@ -2,7 +2,7 @@ import React from "react";
 import AnimatedText from "../components/AnimatedText";
 import FeaturedProject from "../components/FeaturedProject";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import Project from "../components/Progect";
+import Project from "../components/Project";
 
 export const metadata = {
   title: "Kostiantyn | Projects page",
