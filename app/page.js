@@ -37,7 +37,7 @@ export default function Home() {
           <Link
             href="mailto:k.buhantsev@gmail.com"
             target={"_blanc"}
-            className="ml-4 text-lg font-medium capitalize text-dark underline"
+            className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
           >
             Contact
           </Link>

@@ -21,7 +21,7 @@ const AboutPage = () => {
           <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
             Biography
           </h2>
-          <p className="font-medium ">
+          <p className="font-medium">
             Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a
             passion for creating beautiful, functional, and user-centered
             digital experiences. With 4 years of experience in the field. I am
