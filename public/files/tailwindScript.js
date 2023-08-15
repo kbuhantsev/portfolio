@@ -8,5 +8,4 @@
   } else {
     document.documentElement.classList.remove("dark");
   }
-  console.log("script--------------------------");
 })();
