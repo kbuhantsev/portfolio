@@ -7,6 +7,7 @@ import SocialLink from "./SocialLink";
 import CustomLink from "./CustomLink";
 import ThemeSwitcher from "./ThemeSwitcher";
 import CustomMobileLink from "./CustomMobileLink";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="w-full px-20 py-8 font-medium flex items-center justify-between relative">
+    <header className="w-full py-8 font-medium flex items-center justify-between relative">
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
@@ -59,7 +60,9 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       {isOpen ? (
-        <div
+        <motion.div
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between items-center
        fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 
        bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 "
@@ -83,9 +86,12 @@ const NavBar = () => {
             />
           </nav>
 
-          <nav className="flex items-center gap-3">
-            <SocialLink href="https://github.com/kbuhantsev">
-              <GitHub width="2em" height="3em" />
+          <nav className="flex items-center justify-center flex-wrap gap-3">
+            <SocialLink
+              href="https://github.com/kbuhantsev"
+              className="rounded-full w-8 bg-light dark:bg-dark"
+            >
+              <GitHub width="2em" />
             </SocialLink>
             <SocialLink href="https://www.linkedin.com/in/kbuhantsev">
               <LinkedIn width="2em" height="3em" />
@@ -95,7 +101,7 @@ const NavBar = () => {
               <ThemeSwitcher />
             </div>
           </nav>
-        </div>
+        </motion.div>
       ) : null}
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">

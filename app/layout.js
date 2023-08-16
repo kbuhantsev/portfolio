@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
       <Head></Head>
       <body className={montserrat.className}>
         <Script src="/files/tailwindScript.js" />
-        <main className="bg-light text-dark w-full min-h-screen dark:bg-dark dark:text-light">
+        <Layout>
           <NavBar />
-          <Layout>{children}</Layout>
+          <main className="">{children}</main>
           <Footer />
-        </main>
+        </Layout>
       </body>
     </html>
   );
