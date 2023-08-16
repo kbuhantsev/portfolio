@@ -7,16 +7,14 @@ import { MoonIcon, SunIcon } from "./Icons";
 const ThemeSwitcher = () => {
   const { mode, setMode } = useThemeSwitcher();
 
+  console.log(mode);
+
   return (
     <button
       onClick={() => setMode(mode === "dark" ? "light" : "dark")}
-      className="ml-3 flex items-center justify-center rounded-full p-1"
+      className="flex items-center justify-center rounded-full p-1 z-10"
     >
-      {mode === "dark" ? (
-        <SunIcon className={"fill-light"} />
-      ) : (
-        <MoonIcon className={"fill-dark"} />
-      )}
+      {mode === "dark" ? <SunIcon /> : <MoonIcon />}
     </button>
   );
 };

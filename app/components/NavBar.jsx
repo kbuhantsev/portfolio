@@ -90,7 +90,10 @@ const NavBar = () => {
             <SocialLink href="https://www.linkedin.com/in/kbuhantsev">
               <LinkedIn width="2em" height="3em" />
             </SocialLink>
-            <ThemeSwitcher />
+
+            <div className="bg-light dark:bg-dark/75 rounded-full">
+              <ThemeSwitcher />
+            </div>
           </nav>
         </div>
       ) : null}
