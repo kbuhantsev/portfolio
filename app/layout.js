@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
@@ -5,6 +7,9 @@ import NavBar from "./components/NavBar";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
 import Script from "next/script";
+
+import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -18,6 +23,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+
   return (
     <html lang="en">
       <Head></Head>
@@ -25,7 +32,11 @@ export default function RootLayout({ children }) {
         <Script src="/files/tailwindScript.js" />
         <Layout>
           <NavBar />
-          <main className="">{children}</main>
+          <AnimatePresence>
+            <main key={pathname} className="">
+              {children}
+            </main>
+          </AnimatePresence>
           <Footer />
         </Layout>
       </body>
