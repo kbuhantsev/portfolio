@@ -8,7 +8,6 @@ import Layout from "./components/Layout";
 import Footer from "./components/Footer";
 import Script from "next/script";
 
-import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({
@@ -32,11 +31,7 @@ export default function RootLayout({ children }) {
         <Script src="/files/tailwindScript.js" />
         <Layout>
           <NavBar />
-          <AnimatePresence>
-            <main key={pathname} className="">
-              {children}
-            </main>
-          </AnimatePresence>
+          <main>{children}</main>
           <Footer />
         </Layout>
       </body>

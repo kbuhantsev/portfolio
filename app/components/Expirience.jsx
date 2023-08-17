@@ -47,7 +47,7 @@ const Expirience = () => {
   });
 
   return (
-    <div className="my-24">
+    <div className="my-24 w-full">
       <h2 className="font-bold text-8xl w-full text-center mb-32 md:text-6xl xs:text-4xl md:mb-16">
         Expirience
       </h2>
