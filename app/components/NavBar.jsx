@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import { GitHub, LinkedIn } from "./Icons";
 import SocialLink from "./SocialLink";
@@ -15,6 +15,14 @@ const NavBar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (!isOpen) {
+      document.documentElement.style.overflow = "auto";
+    } else {
+      document.documentElement.style.overflow = "hidden";
+    }
+  }, [isOpen]);
 
   return (
     <header className="w-full py-8 font-medium flex items-center justify-between relative">
