@@ -3,6 +3,7 @@ import AnimatedText from "../components/AnimatedText";
 import FeaturedProject from "../components/FeaturedProject";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import Project from "../components/Project";
+import TransitionEffect from "../components/TransitionEffect";
 
 export const metadata = {
   title: "Kostiantyn | Projects page",
@@ -12,6 +13,7 @@ export const metadata = {
 const ProjectsPage = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center">
+      <TransitionEffect />
       <AnimatedText
         text="Imagination Trumps Knowledge!"
         className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"

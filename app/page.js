@@ -3,10 +3,12 @@ import profilePic from "/public/images/profile/developer-pic-1.png";
 import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "./components/Icons";
+import TransitionEffect from "./components/TransitionEffect";
 
 export default function Home() {
   return (
     <section className="flex items-center justify-between w-full lg:flex-col lg:py-16">
+      <TransitionEffect />
       <div className="w-1/2 relative md:w-full">
         <Image
           src={profilePic}

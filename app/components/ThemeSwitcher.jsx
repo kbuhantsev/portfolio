@@ -7,8 +7,6 @@ import { MoonIcon, SunIcon } from "./Icons";
 const ThemeSwitcher = () => {
   const { mode, setMode } = useThemeSwitcher();
 
-  console.log(mode);
-
   return (
     <button
       onClick={() => setMode(mode === "dark" ? "light" : "dark")}

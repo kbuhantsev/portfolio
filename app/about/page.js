@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Expirience from "../components/Expirience";
 import AnimatedNumbers from "../components/AnimatedNumbers";
 import Education from "../components/Education";
+import TransitionEffect from "../components/TransitionEffect";
 
 export const metadata = {
   title: "Kostiantyn | About page",
@@ -15,6 +16,7 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center mb-[250px]">
+      <TransitionEffect />
       <AnimatedText
         text="Passion Fuels Purpose!"
         className="!mt-16 !mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-8"
