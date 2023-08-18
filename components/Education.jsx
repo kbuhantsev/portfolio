@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
-import LiIcon from "./LiIcon";
+import React, { useRef } from 'react';
+import { motion, useScroll } from 'framer-motion';
+import LiIcon from './LiIcon';
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);
@@ -17,7 +17,7 @@ const Details = ({ type, time, place, info }) => {
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
+        transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className="capitalize font-bold text-2xl xs:text-lg">{type}</h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
@@ -34,7 +34,7 @@ const Education = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ['start end', 'center start'],
   });
 
   return (

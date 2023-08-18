@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
-import Logo from "./Logo";
-import { GitHub, LinkedIn } from "./Icons";
-import SocialLink from "./SocialLink";
-import CustomLink from "./CustomLink";
-import ThemeSwitcher from "./ThemeSwitcher";
-import CustomMobileLink from "./CustomMobileLink";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
+import Logo from './Logo';
+import { GitHub, LinkedIn } from './Icons';
+import SocialLink from './SocialLink';
+import CustomLink from './CustomLink';
+import ThemeSwitcher from './ThemeSwitcher';
+import CustomMobileLink from './CustomMobileLink';
+import { motion } from 'framer-motion';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,9 @@ const NavBar = () => {
 
   useEffect(() => {
     if (!isOpen) {
-      document.documentElement.style.overflow = "auto";
+      document.documentElement.style.overflow = 'auto';
     } else {
-      document.documentElement.style.overflow = "hidden";
+      document.documentElement.style.overflow = 'hidden';
     }
   }, [isOpen]);
 
@@ -32,17 +32,17 @@ const NavBar = () => {
       >
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+            isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
           } `}
         ></span>
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
-            isOpen ? "opacity-0" : "opacity-100"
+            isOpen ? 'opacity-0' : 'opacity-100'
           } `}
         ></span>
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+            isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
           } `}
         ></span>
       </button>
@@ -68,7 +68,7 @@ const NavBar = () => {
       {/* Mobile menu */}
       {isOpen ? (
         <motion.div
-          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between items-center
        fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 

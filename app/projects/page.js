@@ -1,13 +1,13 @@
-import React from "react";
-import AnimatedText from "../components/AnimatedText";
-import FeaturedProject from "../components/FeaturedProject";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import Project from "../components/Project";
-import TransitionEffect from "../components/TransitionEffect";
+import React from 'react';
+import AnimatedText from '../../components/AnimatedText';
+import FeaturedProject from '../../components/FeaturedProject';
+import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import Project from '../../components/Project';
+import TransitionEffect from '../../components/TransitionEffect';
 
 export const metadata = {
-  title: "Kostiantyn | Projects page",
-  description: "Full stack developer Kostiantyn Bukhantsev",
+  title: 'Kostiantyn | Projects page',
+  description: 'Full stack developer Kostiantyn Bukhantsev',
 };
 
 const ProjectsPage = () => {

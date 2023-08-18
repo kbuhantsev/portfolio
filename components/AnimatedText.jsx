@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const quote = {
   animate: {
@@ -26,7 +26,7 @@ const singleWord = {
   },
 };
 
-const AnimatedText = ({ text = "", className = "" }) => {
+const AnimatedText = ({ text = '', className = '' }) => {
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
       <motion.h1
@@ -35,7 +35,7 @@ const AnimatedText = ({ text = "", className = "" }) => {
         initial="initial"
         animate="animate"
       >
-        {text.split(" ").map((word, index) => (
+        {text.split(' ').map((word, index) => (
           <motion.span
             key={index}
             className="inline-block"

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export const LinkedIn = ({ className = "", ...props }) => (
+export const LinkedIn = ({ className = '', ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
@@ -19,7 +19,7 @@ export const LinkedIn = ({ className = "", ...props }) => (
   </svg>
 );
 
-export const GitHub = ({ className = "", ...props }) => {
+export const GitHub = ({ className = '', ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

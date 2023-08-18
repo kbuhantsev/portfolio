@@ -1,16 +1,16 @@
-import AnimatedText from "../components/AnimatedText";
-import profileImage from "../../public/images/profile/developer-pic-2.jpg";
-import Image from "next/image";
+import AnimatedText from '../../components/AnimatedText';
+import profileImage from '../../public/images/profile/developer-pic-2.jpg';
+import Image from 'next/image';
 
-import Skills from "../components/Skills";
-import Expirience from "../components/Expirience";
-import AnimatedNumbers from "../components/AnimatedNumbers";
-import Education from "../components/Education";
-import TransitionEffect from "../components/TransitionEffect";
+import Skills from '../../components/Skills';
+import Expirience from '../../components/Expirience';
+import AnimatedNumbers from '../../components/AnimatedNumbers';
+import Education from '../../components/Education';
+import TransitionEffect from '../../components/TransitionEffect';
 
 export const metadata = {
-  title: "Kostiantyn | About page",
-  description: "Full stack developer Kostiantyn Bukhantsev",
+  title: 'Kostiantyn | About page',
+  description: 'Full stack developer Kostiantyn Bukhantsev',
 };
 
 const AboutPage = () => {

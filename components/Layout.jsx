@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Layout = ({ children, className = "" }) => {
+const Layout = ({ children, className = '' }) => {
   return (
     <div
       className={`${className} w-full min-h-screen inline-block z-0

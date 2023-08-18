@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
 
-const CustomMobileLink = ({ href, title, className = "", toggle }) => {
+const CustomMobileLink = ({ href, title, className = '', toggle }) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -20,7 +20,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       <span
         className={`h-[1px] inline-block bg-light absolute left-0 -bottom-1
         group-hover:w-full transition-[width] ease duration-300 dark:bg-dark
-        ${router.asPath === href ? "w-full" : "w-0"}`}
+        ${router.asPath === href ? 'w-full' : 'w-0'}`}
       >
         &nbsp;
       </span>

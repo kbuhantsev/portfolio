@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { GitHub } from "./Icons";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { GitHub } from './Icons';
 
 const Project = ({ type, title, img, link, github }) => {
   return (

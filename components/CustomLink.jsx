@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-const CustomLink = ({ href, title, className = "" }) => {
+const CustomLink = ({ href, title, className = '' }) => {
   const pathname = usePathname();
 
   return (
@@ -12,7 +12,7 @@ const CustomLink = ({ href, title, className = "" }) => {
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-1
         group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-        ${pathname === href ? "w-full" : "w-0"}`}
+        ${pathname === href ? 'w-full' : 'w-0'}`}
       >
         &nbsp;
       </span>
