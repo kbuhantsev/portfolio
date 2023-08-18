@@ -2,6 +2,14 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": [
+        "components/*"
+      ]
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

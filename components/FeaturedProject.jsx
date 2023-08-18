@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { GitHub } from '../components/Icons';
+import { GitHub } from 'components/Icons';
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (

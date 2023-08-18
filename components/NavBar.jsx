@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Logo from './Logo';
-import { GitHub, LinkedIn } from './Icons';
-import SocialLink from './SocialLink';
-import CustomLink from './CustomLink';
-import ThemeSwitcher from './ThemeSwitcher';
-import CustomMobileLink from './CustomMobileLink';
+import Logo from 'components/Logo';
+import { GitHub, LinkedIn } from 'components/Icons';
+import SocialLink from 'components/SocialLink';
+import CustomLink from 'components/CustomLink';
+import ThemeSwitcher from 'components/ThemeSwitcher';
+import CustomMobileLink from 'components/CustomMobileLink';
 import { motion } from 'framer-motion';
 
 const NavBar = () => {

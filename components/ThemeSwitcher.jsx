@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import useThemeSwitcher from './hooks/useThemeSwitcher';
-import { MoonIcon, SunIcon } from './Icons';
+import useThemeSwitcher from 'components/hooks/useThemeSwitcher';
+import { MoonIcon, SunIcon } from 'components/Icons';
 
 const ThemeSwitcher = () => {
   const { mode, setMode } = useThemeSwitcher();
