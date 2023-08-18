@@ -1,9 +1,9 @@
 import Image from "next/image";
 import profilePic from "/public/images/profile/developer-pic-1.png";
-import AnimatedText from "./components/AnimatedText";
+import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "./components/Icons";
-import TransitionEffect from "./components/TransitionEffect";
+import { LinkArrow } from "../components/Icons";
+import TransitionEffect from "../components/TransitionEffect";
 
 const Home = () => {
   return (
